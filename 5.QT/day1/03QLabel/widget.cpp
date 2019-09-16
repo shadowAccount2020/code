@@ -11,4 +11,5 @@ Widget::Widget(QWidget *parent) : QWidget(parent)
     QLineEdit *edit = new QLineEdit("handsome",this);
     edit->move(333,444);
     la->setText("File");
+    la->move(200,200);
 }
