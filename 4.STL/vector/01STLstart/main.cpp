@@ -46,8 +46,8 @@ int main()
     cout << vi.capacity() << endl;//22
 
     vi.push_back(10);
-    cout << vi.size() << endl;
-    cout << vi.capacity() << endl;
+    cout << vi.size() << endl;//12
+    cout << vi.capacity() << endl;//22
 
     return 0;
 }
