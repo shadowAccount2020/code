@@ -27,7 +27,7 @@ void Widget::showSaveFile()
 
 void Widget::showOpenFile()
 {
-    QString filename = QFileDialog::getOpenFileName(this, "open", _filename, "Image (*.png *.jpg *.jepg *.bmp)");
+    QString filename = QFileDialog::getOpenFileName(this, "open", _filename, "Image (*.png *.jpg *.jepg *.bmp)");//得到返回值，getSaveFileName得到文件名，过滤文件名
     if(!filename.isEmpty())
     {
         qDebug() << "file name:" << filename << endl;

@@ -1,5 +1,5 @@
 #include "widget.h"
-#include <QColor>
+#include <QColor>//没继承任何基类
 #include <QPalette> //调色板
 #include <QDebug>
 #include <QLabel>
@@ -20,11 +20,11 @@ Widget::Widget(QWidget *parent)
 
 void Widget::showColorDialog()
 {
-    QColor color = QColorDialog::getColor(QColor("#00FF00"), this, "color");
+    QColor color = QColorDialog::getColor(QColor("#00FF00"), this, "color");//设置颜色
     if(color.isValid())
     {
         QPalette palette = this->palette();
-        qDebug() << palette.color(QPalette::WindowText) << endl;
+        qDebug() << palette.color(QPalette::WindowText) << endl;//设置文本的颜色
 //        palette.setColor(QPalette::WindowText, color);
         palette.setColor(QPalette::Background, QColor(color));
         this->setPalette(palette);

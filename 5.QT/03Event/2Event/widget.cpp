@@ -8,7 +8,7 @@ Widget::Widget(QWidget *parent)
     new PushButton("button", this);
 }
 
-bool Widget::event(QEvent *event)
+bool Widget::event(QEvent *event)//¸²Ð´
 {
 
     if(event->type() == QEvent::MouseButtonPress

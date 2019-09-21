@@ -10,8 +10,8 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = 0);
     ~Widget();
-    bool event(QEvent *event);
-    void mousePressEvent(QMouseEvent *event);
+    bool event(QEvent *event);//Ðéº¯Êý£¬¸²Ð´
+    void mousePressEvent(QMouseEvent *event);//Ðéº¯Êý£¬¸²Ð´
 };
 
 #endif // WIDGET_H
